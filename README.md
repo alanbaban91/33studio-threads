@@ -1,6 +1,6 @@
 # 33Studio Threads Engine
 
-Posts to the 33Studio Threads account 3 times a day (09:11, 13:11, 19:11 Sulaymaniyah time)
+Posts to the 33Studio Threads account 3 times a day (09:00, 13:00, 19:00 Sulaymaniyah time, triggered by cron-job.org)
 from `queue.json`, using the official Threads API and free GitHub Actions. Every 30 minutes it
 also answers new comments in the 33 Studio voice, using a free Hugging Face AI model.
 
@@ -127,7 +127,7 @@ on Threads, and `queue.json` has one post fewer.
 - When the queue runs empty, the run fails on purpose and GitHub emails you. Add a new batch.
 - If a thread breaks halfway, the opener stays live and is removed from the queue, so a rerun
   never double posts. The failed run tells you which part stopped.
-- To change times, edit the cron line in `.github/workflows/post.yml` (UTC; subtract 3 from local).
+- Post times are set in the cron-job.org job (`0 9,13,19 * * *`, timezone Asia/Baghdad). It calls GitHub with a token that has Actions: Read and write on this repo only.
 - Hand-drawn marks: "20 Hand Drawn Marks / Hand Gestures" pack. Check its licence allows
   them in a public repo.
 - Fonts: Barlow Condensed (SIL Open Font License, free to keep in a public repo).

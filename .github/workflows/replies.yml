@@ -1,0 +1,40 @@
+name: Reply to comments (33Studio)
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: threads-33studio-replies
+  cancel-in-progress: false
+
+jobs:
+  reply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pillow
+        run: pip install pillow
+
+      - name: Answer new comments
+        run: python3 replies.py
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_MODEL: ${{ vars.HF_MODEL }}
+          DRY_RUN: ${{ vars.DRY_RUN }}
+
+      - name: Remember answered comments
+        if: always()
+        run: |
+          git config user.name "33studio-threads-bot"
+          git config user.email "33studio-threads-bot@users.noreply.github.com"
+          git add replied.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Answered comments"
+          git pull --rebase && git push

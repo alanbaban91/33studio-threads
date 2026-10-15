@@ -1,0 +1,24 @@
+name: Refresh Threads token (33Studio)
+
+on:
+  schedule:
+    - cron: "0 6 1,15 * *"   # 1st and 15th of each month (tokens last 60 days)
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refresh token and save it back to repo secrets
+        env:
+          OLD_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          NEW=$(curl -sf "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=${OLD_TOKEN}" | jq -r .access_token)
+          if [ -z "$NEW" ] || [ "$NEW" = "null" ]; then
+            echo "Token refresh failed. Run get_token.py again and update THREADS_TOKEN."
+            exit 1
+          fi
+          echo "::add-mask::$NEW"
+          gh secret set THREADS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
+          echo "Token refreshed."

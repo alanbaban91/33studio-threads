@@ -172,7 +172,7 @@ def arrow(d, x, y, color):
 
 
 def render_hand(post, idx):
-    """Friendly studio look: big hand-drawn gestures, sticker pills, round step dots."""
+    """Friendly studio look: big hand-drawn gestures, sticker pills, big step numbers."""
     t = COLORS.get(post.get("color", "cream"), COLORS["cream"])
     slides = post["slides"]
     total, slide = len(slides), slides[idx]
@@ -218,14 +218,14 @@ def render_hand(post, idx):
         if blines:
             draw_lines(d, M, y + 40, blines, bf, 1.22, t["soft"])
     else:
-        # step dot
-        r = 54
-        d.ellipse([M, M + 110, M + 2 * r, M + 110 + 2 * r], fill=t["dot"], outline=t["ink"], width=3)
-        d.text((M + r, M + 110 + r + 4), str(idx), font=font(DISPLAY, 64), fill=t["ink"], anchor="mm")
+        # step number: big, in the accent colour
+        nf = font(DISPLAY, 200)
+        nb = d.textbbox((M, M + 100), f"{idx:02d}", font=nf, anchor="la")
+        d.text((M, M + 100), f"{idx:02d}", font=nf, fill=t["accent"], anchor="la")
         art = mark(n, t["ink"], W * 0.7, 330, -6 if flip else 6)
         ay = fy - 50 - art.height
         img.paste(art, (W - art.width + 60 if flip else -60, ay), art)
-        y0 = M + 110 + 2 * r + 50
+        y0 = nb[3] + 40
         tf, tlines = fit(d, title, DISPLAY, 128, 72, inner, 400, LH)
         y = draw_lines(d, M, y0, tlines, tf, LH, t["ink"])
         if body:

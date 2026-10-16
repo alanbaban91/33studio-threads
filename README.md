@@ -12,7 +12,7 @@ Each post is one of:
 Cards use the 33 brand fonts (mandatory): Barlow Condensed Black for headlines, Barlow
 Condensed Bold for paragraphs and labels. Two looks:
 - **Hand-drawn** (default): friendly studio style. A big hand-drawn gesture from `assets/marks/`
-  on every card, sticker-style labels, round step numbers.
+  on every card, sticker-style labels, big step numbers in the accent colour.
 - **Classic** (`"style": "classic"`): the editorial layout from the Instagram engine.
 
 ## Writing posts

@@ -1,39 +1,6 @@
 [
   {
     "mood": "guide",
-    "kicker": "How we work",
-    "color": "cream",
-    "mark": 20,
-    "slides": [
-      {
-        "title": "From first meeting to launch day.",
-        "body": "Four stages. You're in the room for every one."
-      },
-      {
-        "title": "We listen.",
-        "body": "Your customers, your market, your real constraints. The awkward questions come early."
-      },
-      {
-        "title": "We shape.",
-        "body": "One clear direction with the thinking behind it. Not twenty options to drown in."
-      },
-      {
-        "title": "We build.",
-        "body": "Identity, motion, production. Sketched, argued over, redrawn, until it's right."
-      },
-      {
-        "title": "We launch.",
-        "body": "Rollout, campaign support, and content that keeps going after day one."
-      },
-      {
-        "title": "Your turn.",
-        "body": "33studio.org"
-      }
-    ],
-    "text": "No black box. Here's how a project with 33 Studio actually runs, from the first conversation to the day it goes out.\n\nReady when you are: 33studio.org"
-  },
-  {
-    "mood": "guide",
     "kicker": "Signage",
     "color": "cream",
     "mark": 6,

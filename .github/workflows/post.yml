@@ -1,7 +1,7 @@
 name: Post to Threads (33Studio)
 
 on:
-  # Triggered at 09:00, 13:00, 19:00 Sulaymaniyah time by cron-job.org (exact timing;
+  # Triggered at 09:00, 12:00, 15:00, 18:00, 21:00 Sulaymaniyah time by cron-job.org (exact timing;
   # GitHub's own schedule runs late). Manual runs work from the Actions tab too.
   workflow_dispatch: {}   # lets you trigger a post manually
 

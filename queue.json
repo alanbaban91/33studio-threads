@@ -33,8 +33,25 @@
     "text": "No black box. Here's how a project with 33 Studio actually runs, from the first conversation to the day it goes out.\n\nReady when you are: 33studio.org"
   },
   {
+    "mood": "guide",
+    "kicker": "Signage",
+    "color": "cream",
+    "mark": 6,
+    "slides": [
+      {
+        "title": "People shouldn't need to ask where the door is.",
+        "body": "Signage that guides without shouting."
+      }
+    ],
+    "text": "A clinic, a mall, a campus. Good signage feels obvious, and obvious takes a lot of design.\n\nWe design brands that work in the real world, not only on screens. 33studio.org"
+  },
+  {
     "mood": "roast",
     "text": "You'd never let a stranger cut your hair with their eyes closed.\n\nSo why let a template design the first thing your customers see?\n\nYour brand deserves a real hand. 33studio.org"
+  },
+  {
+    "mood": "friendly",
+    "text": "Good morning to everyone opening their shop today. May the first customer be a good one.\n\nAnd may the sign above the door do you justice. 33studio.org"
   },
   {
     "mood": "guide",
@@ -48,6 +65,10 @@
       }
     ],
     "text": "A logo alone can't carry a brand. The colours, the type, the voice, the way you look on a shop front and on a phone all have to sound like one person.\n\nThat's an identity system. That's what we build. 33studio.org"
+  },
+  {
+    "mood": "roast",
+    "text": "A QR code is not a brand strategy.\n\nIt's a door. Make sure there's something worth walking into. 33studio.org"
   },
   {
     "mood": "friendly",
@@ -64,6 +85,19 @@
     ]
   },
   {
+    "mood": "guide",
+    "kicker": "Lettering",
+    "color": "ink",
+    "mark": 14,
+    "slides": [
+      {
+        "title": "Your name, drawn by hand. In every script.",
+        "body": "Custom lettering in Kurdish, Arabic and English."
+      }
+    ],
+    "text": "A font is something you choose. Lettering is something made for you.\n\nWe draw wordmarks by hand, so your name looks like nobody else's. 33studio.org"
+  },
+  {
     "mood": "friendly",
     "kicker": "TVC & AI TVC",
     "color": "ink",
@@ -77,8 +111,22 @@
     "text": "Script to screen: concept, casting, location, shoot and post. Or the same craft through AI TVC, on a fraction of the schedule.\n\nEither way, the idea comes first. Tell us what you want people to feel: 33studio.org"
   },
   {
+    "mood": "guide",
+    "text": "Your brand is judged in this order: how it looks, how it sounds, how it behaves.\n\nMost businesses only work on the third. We help with all three. 33studio.org"
+  },
+  {
     "mood": "roast",
     "text": "Your product is excellent. Your Instagram says otherwise.\n\nLet's fix the part customers see first. 33studio.org"
+  },
+  {
+    "mood": "guide",
+    "text": [
+      "How to brief a logo without saying “logo.” A thread.",
+      "Tell us who you are on your best day. The logo should look like that version of you, not like your competitor.",
+      "Tell us where it will live. A shop sign and an app icon need different strengths.",
+      "Tell us what you'd hate. Knowing what you'd never be is half of knowing what you are.",
+      "Then let us draw. 33studio.org"
+    ]
   },
   {
     "mood": "guide",
@@ -118,6 +166,19 @@
     "text": "Selling in Kurdistan and beyond? Your brand has to speak Kurdish, Arabic and English without sounding translated in any of them.\n\nWe design all three scripts together, from day one. 33studio.org"
   },
   {
+    "mood": "friendly",
+    "kicker": "Logo animation",
+    "color": "teal",
+    "mark": 15,
+    "slides": [
+      {
+        "title": "Three seconds. One memory.",
+        "body": "Logo stings that open every video you make."
+      }
+    ],
+    "text": "Before every reel, ad and presentation, there are three seconds where your logo can either sit there or say something.\n\nWe make it say something. 33studio.org"
+  },
+  {
     "mood": "guide",
     "kicker": "Packaging",
     "color": "teal",
@@ -131,8 +192,16 @@
     "text": "Nobody reads a shelf. They scan it. Your packaging has two seconds to stop a hand.\n\nWe design for those two seconds. 33studio.org"
   },
   {
+    "mood": "friendly",
+    "text": "Started a business this year? Tell us what it is below.\n\nWe'd love to see what Kurdistan is building."
+  },
+  {
     "mood": "guide",
     "text": "The cheapest moment to get your brand right is before you print anything.\n\nSigns, cups, uniforms, vans. Every one costs more to redo than to do well the first time.\n\nTalk to us before the printer does. 33studio.org"
+  },
+  {
+    "mood": "roast",
+    "text": "If your logo only works on a white background, it isn't a logo. It's a sticker with conditions.\n\n33studio.org"
   },
   {
     "mood": "roast",
@@ -153,7 +222,40 @@
   },
   {
     "mood": "friendly",
+    "kicker": "First call",
+    "color": "cream",
+    "mark": 20,
+    "slides": [
+      {
+        "title": "What happens in our first call.",
+        "body": "No pitch deck. No sales script."
+      },
+      {
+        "title": "You talk. We listen.",
+        "body": "Where you are, where you want to go, what's in the way."
+      },
+      {
+        "title": "We ask the awkward questions.",
+        "body": "Who exactly is this for? What would you never do?"
+      },
+      {
+        "title": "We tell you what we'd do.",
+        "body": "An honest first opinion, even if it's not what you expected."
+      },
+      {
+        "title": "Book yours.",
+        "body": "33studio.org"
+      }
+    ],
+    "text": "A first conversation with 33 Studio costs you nothing but an hour. Here's what to expect.\n\n33studio.org"
+  },
+  {
+    "mood": "friendly",
     "text": "To the founder who opened the shop with their own savings and designed the sign themselves:\n\nRespect. Genuinely.\n\nWhen it's time to look as good as what you sell, start at 33studio.org"
+  },
+  {
+    "mood": "guide",
+    "text": "Great brands repeat themselves on purpose. Same colours, same voice, same idea, for years.\n\nBoring for you. Memorable for everyone else. 33studio.org"
   },
   {
     "mood": "friendly",
@@ -167,6 +269,19 @@
       }
     ],
     "text": "No sales script. Just tell us what you're building and where you want it to go.\n\nhello@33studio.org"
+  },
+  {
+    "mood": "guide",
+    "kicker": "Packaging",
+    "color": "ink",
+    "mark": 18,
+    "slides": [
+      {
+        "title": "Made here. Ready for any shelf.",
+        "body": "Packaging that stands next to imports and doesn't blink."
+      }
+    ],
+    "text": "Local products deserve packaging that can sit beside anything imported and still get picked first.\n\nWe design it. 33studio.org"
   },
   {
     "mood": "guide",
@@ -187,11 +302,32 @@
   },
   {
     "mood": "friendly",
+    "text": "The best thing anyone can say about a new brand: “It looks like us, only better.”\n\nThat's the brief behind every brief. 33studio.org"
+  },
+  {
+    "mood": "friendly",
     "text": "Restaurant owners: your food gets one bite to impress. Your brand gets one glance.\n\nWe design the menus, packaging, signage and launch content that make the glance count. 33studio.org"
   },
   {
     "mood": "roast",
+    "text": "“Can you make it like that brand, but different?”\n\nYes. We call it making it yours. 33studio.org"
+  },
+  {
+    "mood": "roast",
     "text": "A beautiful shop with a logo from a free app is a tailored suit with flip-flops.\n\nLet's finish the look. 33studio.org"
+  },
+  {
+    "mood": "friendly",
+    "kicker": "Employer brand",
+    "color": "teal",
+    "mark": 4,
+    "slides": [
+      {
+        "title": "Great people choose brands too.",
+        "body": "Branding that helps you hire better."
+      }
+    ],
+    "text": "Your brand isn't only for customers. The best people check how you look before they apply.\n\nWe build brands people want to buy from and work for. 33studio.org"
   },
   {
     "mood": "guide",
@@ -211,6 +347,10 @@
     "text": "Clinic, café, real estate, retail, tech. Different worlds, same question: why should anyone choose you?\n\nWe help brands answer it in a way people remember. 33studio.org"
   },
   {
+    "mood": "guide",
+    "text": "Before you spend on ads, spend a day on your profile. Bio, highlights, grid, link.\n\nEvery ad sends people there. Make sure they stay. 33studio.org"
+  },
+  {
     "mood": "friendly",
     "kicker": "Web & app",
     "color": "teal",
@@ -224,8 +364,32 @@
     "text": "It works nights, weekends and holidays, and it meets every customer before you do.\n\nWe design and build websites and apps that look like the brand you actually are. 33studio.org"
   },
   {
+    "mood": "friendly",
+    "text": [
+      "Questions founders ask before hiring an agency, answered honestly. A thread.",
+      "“How long does it take?” Depends on the work. We'll give you a real timeline in the first call, and explain it.",
+      "“How much does it cost?” Depends on scope. You'll get a clear number once we understand the job, before anything starts.",
+      "“Do we need everything at once?” No. Many brands start with identity, then add motion and content as they grow.",
+      "“Can you work with our team?” Yes. We hand over files, guidelines and templates your team can actually use.",
+      "Anything else? Ask us: hello@33studio.org"
+    ]
+  },
+  {
     "mood": "guide",
     "text": "A simple test for any brand: cover the logo on your ad. Do people still know it's you?\n\nIf yes, you have an identity. If not, you have a logo. We build the first kind. 33studio.org"
+  },
+  {
+    "mood": "guide",
+    "kicker": "AI retouching",
+    "color": "ink",
+    "mark": 17,
+    "slides": [
+      {
+        "title": "Hundreds of product photos. One consistent look.",
+        "body": "AI retouching workflows, set up for your team."
+      }
+    ],
+    "text": "Catalogue day used to mean weeks of manual retouching.\n\nWe build AI workflows that keep every photo on-brand, then hand them to your team. 33studio.org"
   },
   {
     "mood": "guide",
@@ -271,8 +435,16 @@
     "text": "A brand starts falling apart the first time someone new touches it without rules.\n\nWe write guidelines your team, your printer and your next designer will actually use. 33studio.org"
   },
   {
+    "mood": "friendly",
+    "text": "Some of the best brands in the world started in small cities with big ideas.\n\nSulaymaniyah is a good place to start. 33studio.org"
+  },
+  {
     "mood": "roast",
     "text": "“We'll do the branding later, once we're bigger.”\n\nBrands usually get bigger because they did the branding first. 33studio.org"
+  },
+  {
+    "mood": "guide",
+    "text": "A rebrand doesn't have to stop the business. Done well, customers notice it got better, not that it changed.\n\nWe plan rollouts that keep you running. 33studio.org"
   },
   {
     "mood": "guide",
@@ -286,6 +458,19 @@
       }
     ],
     "text": "Prototype not ready? Packaging still at the printer?\n\nWe render it in 3D, so your campaign can launch before the product lands. 33studio.org"
+  },
+  {
+    "mood": "friendly",
+    "kicker": "Events",
+    "color": "cream",
+    "mark": 13,
+    "slides": [
+      {
+        "title": "An event is a brand you can walk into.",
+        "body": "Event identities, screens and social."
+      }
+    ],
+    "text": "Launch nights, conferences, openings. People remember how an event felt, and they photograph everything.\n\nWe design events worth photographing. 33studio.org"
   },
   {
     "mood": "friendly",
@@ -305,12 +490,33 @@
     "text": "Monthly content, bilingual copy, motion assets and a plan that keeps your brand alive between campaigns.\n\nLess scrambling. More recognition. 33studio.org"
   },
   {
+    "mood": "roast",
+    "text": "Your brand guidelines are a PDF from 2019 that nobody can find.\n\nLet's make ones people actually open. 33studio.org"
+  },
+  {
     "mood": "guide",
     "text": "Three things every new business needs before opening day: a name people can say, a look people remember, and a reason to come back.\n\nWe help with all three. 33studio.org"
   },
   {
+    "mood": "friendly",
+    "text": "What should we post about next? Branding, motion, AI, packaging, or running a studio in Sulaymaniyah?\n\nTell us below."
+  },
+  {
     "mood": "roast",
     "text": "Your logo has been stretched, squashed, recoloured and screenshotted so many times it's in witness protection.\n\nLet's bring it home. 33studio.org"
+  },
+  {
+    "mood": "guide",
+    "kicker": "Real estate",
+    "color": "ink",
+    "mark": 19,
+    "slides": [
+      {
+        "title": "Sell the building before the first brick.",
+        "body": "3D renders, films and branding for new developments."
+      }
+    ],
+    "text": "Buyers can't walk through a building that doesn't exist yet. With 3D renders and a brand worth believing, they can picture living there.\n\nWe help developments sell early. 33studio.org"
   },
   {
     "mood": "guide",
@@ -331,6 +537,10 @@
   },
   {
     "mood": "guide",
+    "text": "Kurdish typography deserves the same care as Latin. Proper spacing, proper weight, proper letterforms.\n\nIt's one of the things we're most stubborn about. 33studio.org"
+  },
+  {
+    "mood": "guide",
     "kicker": "AI workflows",
     "color": "ink",
     "mark": 17,
@@ -344,7 +554,44 @@
   },
   {
     "mood": "guide",
+    "kicker": "Brand check",
+    "color": "ink",
+    "mark": 1,
+    "slides": [
+      {
+        "title": "The five-minute brand check.",
+        "body": "Be honest. Count your yeses."
+      },
+      {
+        "title": "Same logo everywhere?",
+        "body": "Signs, social, invoices, uniforms. All the same version."
+      },
+      {
+        "title": "Can you say it in one sentence?",
+        "body": "What you do, and why it matters."
+      },
+      {
+        "title": "Would a stranger recognise you?",
+        "body": "Without seeing your name."
+      },
+      {
+        "title": "Does it still fit?",
+        "body": "Your brand should be as ambitious as your business."
+      },
+      {
+        "title": "Fewer than four yeses?",
+        "body": "Let's talk. 33studio.org"
+      }
+    ],
+    "text": "Most brands don't need a revolution. They need someone to notice what's quietly not working.\n\nTake the check."
+  },
+  {
+    "mood": "guide",
     "text": "A good agency should make you braver, not just prettier.\n\nIf your brand could use some courage: 33studio.org"
+  },
+  {
+    "mood": "roast",
+    "text": "“We'll know it when we see it” is how projects end up with forty versions.\n\nA good brief gets there in three. We'll help you write it. 33studio.org"
   },
   {
     "mood": "guide",
@@ -390,8 +637,25 @@
     ]
   },
   {
+    "mood": "friendly",
+    "kicker": "Brand voice",
+    "color": "teal",
+    "mark": 10,
+    "slides": [
+      {
+        "title": "Your brand has a voice. Does it sound like you?",
+        "body": "Bilingual copy and tone of voice."
+      }
+    ],
+    "text": "Most brands look designed and sound improvised.\n\nWe write how your brand speaks, in Kurdish, Arabic and English, so every caption sounds like the same person. 33studio.org"
+  },
+  {
     "mood": "roast",
     "text": "Six fonts on one flyer isn't variety. It's an argument.\n\nLet's settle it. 33studio.org"
+  },
+  {
+    "mood": "guide",
+    "text": "A designer makes a thing. An agency should help you decide what to make.\n\nWe do both. 33studio.org"
   },
   {
     "mood": "friendly",
@@ -405,6 +669,16 @@
       }
     ],
     "text": "You've grown. Your brand hasn't. Customers can feel the gap.\n\nLet's close it. 33studio.org"
+  },
+  {
+    "mood": "guide",
+    "text": [
+      "What makes a logo last. A short thread.",
+      "It works small. If it's unreadable as an app icon, it doesn't work.",
+      "It works in one colour. Stamped, embroidered, printed on a receipt.",
+      "It's simple enough to draw from memory. That's how people carry it around.",
+      "And it's yours. Not a trend, not a template. 33studio.org"
+    ]
   },
   {
     "mood": "guide",
@@ -424,8 +698,25 @@
     "text": "Anyone can buy media. Not everyone gives people a reason to look.\n\nWe start every campaign with the idea, then make the ads. 33studio.org"
   },
   {
+    "mood": "guide",
+    "kicker": "Social video",
+    "color": "cream",
+    "mark": 2,
+    "slides": [
+      {
+        "title": "Reels people actually finish.",
+        "body": "Social cutdowns and motion content."
+      }
+    ],
+    "text": "The first second decides everything. We make social video that earns the second second, and the rest.\n\n33studio.org"
+  },
+  {
     "mood": "friendly",
     "text": "Every 33 Studio project is sketched by hand before it touches a screen.\n\nIt's slower at the start. It's why the end is better. 33studio.org"
+  },
+  {
+    "mood": "friendly",
+    "text": "Weekend reminder: the brand you're building matters. The late nights count. Keep going.\n\nWhen you're ready for help, we're here. 33studio.org"
   },
   {
     "mood": "guide",
@@ -439,6 +730,19 @@
       }
     ],
     "text": "Your customers switch between Kurdish, Arabic and English all day. Your brand should too, without ever looking translated.\n\n33studio.org"
+  },
+  {
+    "mood": "friendly",
+    "kicker": "33 Studio",
+    "color": "teal",
+    "mark": 3,
+    "slides": [
+      {
+        "title": "We sit close to founders.",
+        "body": "It's how the work stays honest."
+      }
+    ],
+    "text": "We ask the awkward questions early, we show our thinking, and we make everything by hand.\n\nIf that's how you like to work too: 33studio.org"
   },
   {
     "mood": "roast",

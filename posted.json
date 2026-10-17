@@ -101,5 +101,22 @@
     "posted_at": "2026-10-17T10:00:43.121685+00:00",
     "mood": "friendly",
     "text": "Good morning to everyone opening their shop today. May the first customer be a good one.\n\nAnd may the sign above the door do you justice. 33studio.org"
+  },
+  {
+    "ids": [
+      "18287554279294899"
+    ],
+    "posted_at": "2026-10-17T16:00:43.897397+00:00",
+    "mood": "guide",
+    "kicker": "Brand identity",
+    "color": "teal",
+    "mark": 14,
+    "slides": [
+      {
+        "title": "A logo is a signature. We design the whole handwriting.",
+        "body": "Naming, positioning, logo systems, guidelines."
+      }
+    ],
+    "text": "A logo alone can't carry a brand. The colours, the type, the voice, the way you look on a shop front and on a phone all have to sound like one person.\n\nThat's an identity system. That's what we build. 33studio.org"
   }
 ]

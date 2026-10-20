@@ -10,7 +10,7 @@ image cards (1 card = image post, 2+ cards = carousel). The card look is the
   python3 post.py preview   # check every queued post; render all cards into preview/
 """
 import json, os, sys, time, datetime, urllib.request, urllib.parse, urllib.error
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 SITE = "33studio.org"
 API = "https://graph.threads.net/v1.0"
@@ -256,8 +256,23 @@ def check(post, n):
             sys.exit(f"Post {n}, part {i + 1} is empty.")
         if len(p) > MAX_LEN:
             sys.exit(f"Post {n}, part {i + 1} is {len(p)} chars (max {MAX_LEN}). Shorten it:\n{p}")
-    if not 0 <= len(post.get("slides", [])) <= 20:
-        sys.exit(f"Post {n} has {len(post['slides'])} cards (max 20).")
+    for ph in post.get("photos", []):
+        if not os.path.isfile(ph) or not ph.lower().endswith((".jpg", ".jpeg", ".png")):
+            sys.exit(f"Post {n}: photo {ph} is missing or not a .jpg/.png file.")
+    if not 0 <= len(post.get("slides", [])) + len(post.get("photos", [])) <= 20:
+        sys.exit(f"Post {n} has more than 20 images.")
+
+
+def copy_photos(post, folder, prefix):
+    """Real photos from photos/: upright, max 1440px, JPEG, no EXIF (drops phone GPS data)."""
+    names = []
+    for i, ph in enumerate(post.get("photos", []), 1):
+        im = ImageOps.exif_transpose(Image.open(ph)).convert("RGB")
+        im.thumbnail((1440, 1800))
+        name = f"{prefix}-photo-{i:02d}.jpg"
+        im.save(os.path.join(folder, name), "JPEG", quality=90)
+        names.append(name)
+    return names
 
 
 def load(path, default):
@@ -321,9 +336,9 @@ def cmd_render():
         if f.endswith(".jpg"):
             os.remove(os.path.join("media", f))
     stamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d%H%M")
-    names = render_post(queue[0], "media", f"post-{stamp}")
+    names = copy_photos(queue[0], "media", f"post-{stamp}") + render_post(queue[0], "media", f"post-{stamp}")
     save("media/next.json", names)
-    print(f"Rendered {len(names)} card(s)." if names else "Text post, nothing to render.")
+    print(f"Prepared {len(names)} image(s)." if names else "Text post, nothing to render.")
 
 
 def cmd_publish():

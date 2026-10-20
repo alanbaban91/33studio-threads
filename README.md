@@ -1,6 +1,6 @@
 # 33Studio Threads Engine
 
-Posts to the 33Studio Threads account 5 times a day (09:00, 12:00, 15:00, 18:00, 21:00 Sulaymaniyah time, triggered by cron-job.org)
+Posts to the 33Studio Threads account 2 times a day (09:00 and 20:00 Sulaymaniyah time, triggered by cron-job.org)
 from `queue.json`, using the official Threads API and free GitHub Actions. Every 30 minutes it
 also answers new comments in the 33 Studio voice, using a free Hugging Face AI model.
 
@@ -8,6 +8,9 @@ Each post is one of:
 - **Text:** a single post.
 - **Thread:** several connected posts (each one replies to the one before).
 - **Image or carousel:** text plus branded 33 Studio cards (1 card = image, 2 to 20 = carousel).
+- **Photo:** text plus real photos. Put the photos in `photos/` and list them in the post:
+  `{ "mood": "city", "photos": ["photos/sign-01.jpg"], "text": "..." }`. JPG or PNG,
+  any size. They're straightened, resized and stripped of location data before posting.
 
 Cards use the 33 brand fonts (mandatory): Barlow Condensed Black for headlines, Barlow
 Condensed Bold for paragraphs and labels. Two looks:
@@ -27,7 +30,8 @@ Condensed Bold for paragraphs and labels. Two looks:
     "text": "The caption that sits above the image." }
 ]
 ```
-- `mood`: `friendly`, `roast` or `guide`. Only a label, so you can keep the mix balanced.
+- `mood`: the culture territory (`city`, `script`, `craft`, `scene`, `take`) or, for the
+  20% commerce share, `friendly` / `roast` / `guide`. Only a label, to keep the mix balanced.
 - `color` (image posts): `cream`, `ink` or `teal` (also `paper`, made for the classic look).
 - `mark` (optional, 1 to 20): which hand-drawn gesture to use. Set it per post, or per card
   inside `slides`. Left out, one is picked automatically. Good matches: 3 high-five,
@@ -127,7 +131,7 @@ on Threads, and `queue.json` has one post fewer.
 - When the queue runs empty, the run fails on purpose and GitHub emails you. Add a new batch.
 - If a thread breaks halfway, the opener stays live and is removed from the queue, so a rerun
   never double posts. The failed run tells you which part stopped.
-- Post times are set in the cron-job.org job (`0 9,12,15,18,21 * * *`, timezone Asia/Baghdad). It calls GitHub with a token that has Actions: Read and write on this repo only.
+- Post times are set in the cron-job.org job (`0 9,20 * * *`, timezone Asia/Baghdad). It calls GitHub with a token that has Actions: Read and write on this repo only.
 - Hand-drawn marks: "20 Hand Drawn Marks / Hand Gestures" pack. Check its licence allows
   them in a public repo.
 - Fonts: Barlow Condensed (SIL Open Font License, free to keep in a public repo).

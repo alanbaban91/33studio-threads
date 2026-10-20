@@ -1,18 +1,5 @@
 [
   {
-    "mood": "city",
-    "kicker": "The City",
-    "color": "ink",
-    "mark": 10,
-    "slides": [
-      {
-        "title": "Every bazaar has a colour palette nobody designed.",
-        "body": "Spice orange. Tea-glass gold. Tarpaulin blue."
-      }
-    ],
-    "text": "The best palettes are found, not chosen. Walk through any bazaar in Slemani and you'll see more colour sense than in most brand guidelines.\n\nWhat colour is your city?"
-  },
-  {
     "mood": "craft",
     "text": "Studio note: we killed our favourite idea today. It was clever. It just wasn't true.\n\nThat's the job."
   },

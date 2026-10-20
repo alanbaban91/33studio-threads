@@ -1,65 +1,84 @@
 #!/usr/bin/env python3
-"""33Studio reply bot: answers new comments on recent posts in the 33 Studio voice,
-using a free Hugging Face chat model.
+"""33Studio reply bot: answers new comments that match known topics (price, working
+together, location, jobs, thanks) in Kurdish, Arabic or English. No AI: comments that
+match nothing get no reply, which is safer than a wrong one.
 
-  python3 replies.py            # reply to new comments (needs THREADS_TOKEN, HF_TOKEN)
+  python3 replies.py            # reply to new comments (needs THREADS_TOKEN)
   DRY_RUN=1 python3 replies.py  # print the replies it would send, post nothing
 """
-import json, os, re, sys, urllib.request, urllib.error
-from post import api, publish, load, save, MAX_LEN
+import os, re, sys, zlib
+from post import api, publish, load, save
 
-HF_URL = "https://router.huggingface.co/v1/chat/completions"
-HF_MODEL = os.environ.get("HF_MODEL") or "meta-llama/Llama-3.1-8B-Instruct"
 SEEN = "replied.json"
 MAX_REPLIES = 10      # per run, so a spam wave can't flood the account
 RECENT_POSTS = 20     # how many of our latest posts to check for comments
+KURDISH = set("\u0695\u06b5\u06ce\u06c6\u06d5\u067e\u0686\u0698\u06af\u06a4")   # ڕ ڵ ێ ۆ ە پ چ ژ گ ڤ
 
-PROMPT = """You reply to comments on Threads for 33 Studio, a creative agency in Sulaymaniyah, Kurdistan.
-Services: brand strategy & identity, naming, graphic design & packaging, illustration & ad concepts,
-motion design, TVC & video production, AI TVC, AI workflows, 3D & VFX, social media & content systems,
-website & app design. Work is made by hand: sketched first, argued over, redrawn, then built.
-Website: 33studio.org. Email: hello@33studio.org.
+# Matches whole English words but lets Kurdish/Arabic stems take endings (کوێ -> کوێن).
+# Checked in this order: the first topic that matches wins ("how much to work with you" is a price question).
+TOPICS = [
+    ("job", r"\b(job|jobs|intern|internship|vacanc\w*|hiring|are you hiring|portfolio review|دامەزراندن|کارمەند|ڕاهێنان|وظيفة|توظيف|تدريب)(?![a-z])"),
+    ("price", r"\b(price|prices|pricing|cost|costs|how much|budget|rate|rates|نرخ|نرخی|چەند|پارە|سعر|اسعار|أسعار|كم(?!\w)|بكم(?!\w)|تكلفة)(?![a-z])"),
+    ("where", r"\b(where are you|where is|location|address|office|لە کوێ|لەکوێ|ناونیشان|شوێن|وين|أين|اين|عنوان)(?![a-z])"),
+    ("work", r"\b(work with|work together|hire you|collab\w*|your services|contact|dm|available|need a (logo|brand|website|designer)|پڕۆژە|پەیوەندی|خزمەتگوزاری|مشروع|تعاون|تواصل|خدمات)(?![a-z])"),
+    ("thanks", r"\b(thank\w*|love|great|beautiful|amazing|nice|brilliant|well said|so true|facts|سوپاس|جوان|دەستخۆش|دەست خۆش|بژی|شكرا|شكراً|جميل|رائع|مبدع|حلو)(?![a-z])"),
+]
 
-Voice: warm, understanding, confident and brief, like a senior creative at a top agency. Witty when the
-comment is playful, kind when someone is unsure or struggling, calm when someone disagrees.
-Rules:
-- Reply in the same language as the comment (Kurdish, Arabic or English).
-- 1 to 3 short sentences. No emoji, no hashtags, no exclamation marks.
-- Answer what they actually said. Thank people who are kind, briefly.
-- If they ask about prices, timelines or availability: never give numbers; invite them to
-  hello@33studio.org or 33studio.org so the team can answer properly.
-- If they seem interested in working together, point them to 33studio.org.
-- Never invent facts, clients, prices, awards or promises. Never name or discuss clients.
-- Never argue, never be sarcastic about the commenter.
-- If the comment is spam, abusive, political, religious, or doesn't need an answer (just an emoji
-  or a tag), reply with exactly: SKIP
-Output only the reply text."""
+# Doubt or criticism: never answer these with a cheerful thank-you (keywords can't read tone).
+DOUBT = r"\b(but|not|meh|bad|ugly|worst|hate|boring|overrated|copy|copied|stolen|بەڵام|خراپ|ناشیرین|لكن|سيء|سيئ|مسروق)(?![a-z])"
+
+# Several wordings per answer, picked per comment, so the profile doesn't fill with copies.
+REPLIES = {
+    "job": {
+        "en": ["We're always happy to see good work. Send your portfolio to hello@33studio.org"],
+        "ku": ["هەمیشە خۆشحاڵ دەبین کاری باش ببینین. پۆرتفۆلیۆکەت بنێرە بۆ hello@33studio.org"],
+        "ar": ["يسعدنا دائمًا رؤية الأعمال الجيدة. أرسل ملف أعمالك إلى hello@33studio.org"],
+    },
+    "price": {
+        "en": ["Every project is priced to its scope. Tell us what you need at hello@33studio.org and we'll send a clear number.",
+               "It depends on what you need. Send us a few lines at hello@33studio.org and you'll get a clear price before anything starts."],
+        "ku": ["نرخی هەر پڕۆژەیەک بەپێی قەبارەکەیەتی. پێمان بڵێ چیت پێویستە لە hello@33studio.org و نرخێکی ڕوونت بۆ دەنێرین."],
+        "ar": ["سعر كل مشروع حسب حجمه. أخبرنا بما تحتاجه على hello@33studio.org وسنرسل لك سعرًا واضحًا."],
+    },
+    "where": {
+        "en": ["Salim Street, Sulaymaniyah. Say hello first so we can put the tea on: hello@33studio.org"],
+        "ku": ["شەقامی سالم، سلێمانی. پێشتر سڵاومان لێ بکە: hello@33studio.org"],
+        "ar": ["شارع سالم، السليمانية. راسلنا أولًا: hello@33studio.org"],
+    },
+    "work": {
+        "en": ["We'd love to hear about it. Tell us what you're building at 33studio.org",
+               "Good things start with a conversation. Start ours at 33studio.org"],
+        "ku": ["خۆشحاڵ دەبین. باسی پڕۆژەکەت بکە لە 33studio.org"],
+        "ar": ["يسعدنا ذلك. حدّثنا عن مشروعك على 33studio.org"],
+    },
+    "thanks": {
+        "en": ["Thank you. That means a lot to the studio.", "Appreciated. Glad it landed.", "Thank you for reading. More soon."],
+        "ku": ["زۆر سوپاس، ئەمە زۆر بۆ ستۆدیۆکە بەنرخە."],
+        "ar": ["شكرًا جزيلًا، هذا يعني لنا الكثير."],
+    },
+}
 
 
-def ask_model(post_text, comment):
-    body = json.dumps({
-        "model": HF_MODEL, "max_tokens": 200, "temperature": 0.6,
-        "messages": [{"role": "system", "content": PROMPT},
-                     {"role": "user", "content": f"Our post:\n{post_text}\n\nTheir comment:\n{comment}"}],
-    }).encode()
-    req = urllib.request.Request(HF_URL, data=body, headers={
-        "Authorization": f"Bearer {os.environ['HF_TOKEN']}", "Content-Type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return json.load(r)["choices"][0]["message"]["content"].strip().strip('"')
-    except urllib.error.HTTPError as e:
-        sys.exit(f"Hugging Face error {e.code}: {e.read().decode()[:500]}")
+def language(text):
+    if any("\u0600" <= ch <= "\u06ff" for ch in text):
+        return "ku" if KURDISH & set(text) else "ar"
+    return "en"
 
 
-def tidy(reply):
-    # the voice has no emoji; models sometimes add them anyway
-    reply = re.sub(r" {2,}", " ", "".join(ch for ch in reply if ord(ch) < 0x2190)).strip()   # keeps Latin, Arabic, Kurdish
-    return None if not reply or reply.upper().startswith("SKIP") else reply[:MAX_LEN]
+def answer(text, comment_id=""):
+    """The reply for a comment, or None when it matches no topic."""
+    low = text.lower()
+    for topic, pattern in TOPICS:
+        if topic == "thanks" and re.search(DOUBT, low):
+            return None
+        if re.search(pattern, low):
+            options = REPLIES[topic][language(text)]
+            return options[zlib.crc32(comment_id.encode()) % len(options)]
+    return None
 
 
 def main():
     token = os.environ.get("THREADS_TOKEN") or sys.exit("THREADS_TOKEN is not set.")
-    os.environ.get("HF_TOKEN") or sys.exit("HF_TOKEN is not set.")
     dry = os.environ.get("DRY_RUN") == "1"
     seen = set(load(SEEN, []))
     me = api("GET", "me", {"fields": "username", "access_token": token})["username"]
@@ -74,7 +93,7 @@ def main():
                 break
             if c["id"] in seen or c.get("username") == me or not c.get("text"):
                 continue
-            reply = tidy(ask_model(p.get("text", ""), c["text"]))
+            reply = answer(c["text"], c["id"])
             print(f"@{c.get('username')}: {c['text']}\n  -> {reply or '(skipped)'}\n")
             if reply and not dry:
                 publish({"media_type": "TEXT", "text": reply, "reply_to_id": c["id"]}, token)

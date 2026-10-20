@@ -2,7 +2,8 @@
 
 Posts to the 33Studio Threads account 2 times a day (09:00 and 20:00 Sulaymaniyah time, triggered by cron-job.org)
 from `queue.json`, using the official Threads API and free GitHub Actions. Every 30 minutes it
-also answers new comments in the 33 Studio voice, using a free Hugging Face AI model.
+also answers new comments that ask about price, working together, location or jobs, or that
+say thanks, in Kurdish, Arabic or English. No AI and no extra accounts.
 
 Each post is one of:
 - **Text:** a single post.
@@ -71,15 +72,7 @@ The app can stay in development mode: it only posts and replies on the 33Studio 
 3. Paste the **33Studio Threads** App ID and App Secret, and `https://33studio.org/` as the redirect URI, open the link it prints, approve, then paste
    the URL you land on. Copy the long token it prints. That's `THREADS_TOKEN`.
 
-### Step 3. Get a free Hugging Face token (for comment replies)
-1. Sign up at huggingface.co (free).
-2. Profile picture > Settings > **Access Tokens** > Create new token > **Fine-grained**.
-3. Name it `33studio-threads`, tick **Make calls to Inference Providers**, create, and copy it.
-   That's `HF_TOKEN`.
-4. Free accounts get a small amount of monthly credit. Short replies cost a tiny fraction of a
-   cent each, so normal comment volume fits. If you outgrow it, HF PRO is $9/month.
-
-### Step 4. Create the GitHub repo
+### Step 3. Create the GitHub repo
 1. github.com > New repository > name `33studio-threads` > **Public** > Create.
    (Public so Threads can download the card images. Tokens stay hidden in Secrets.)
 2. Add file > Upload files > drag in everything in this folder **except** `.github` and
@@ -90,19 +83,18 @@ The app can stay in development mode: it only posts and replies on the 33Studio 
    - `.github/workflows/replies.yml`
    - `.github/workflows/refresh-token.yml`
 
-### Step 5. Add the secrets
+### Step 4. Add the secrets
 Repo > Settings > Secrets and variables > Actions > **Secrets** tab > New repository secret:
 - `THREADS_TOKEN`: from step 2
-- `HF_TOKEN`: from step 3
 - `GH_PAT`: github.com > Settings > Developer settings > Fine-grained tokens > Generate.
   Repository access: only `33studio-threads`. Permissions: **Secrets: Read and write**.
   This lets the refresh workflow renew the Threads token every two weeks.
 
-### Step 6. Test posting
+### Step 5. Test posting
 Actions > **Post to Threads (33Studio)** > Run workflow. In about a minute the first post is live
 on Threads, and `queue.json` has one post fewer.
 
-### Step 7. Test replies safely first
+### Step 6. Test replies safely first
 1. Settings > Secrets and variables > Actions > **Variables** tab > New variable:
    `DRY_RUN` = `1`
 2. Leave a test comment on the new post from your personal account.
@@ -111,21 +103,24 @@ on Threads, and `queue.json` has one post fewer.
 4. Happy with the tone? Delete the `DRY_RUN` variable. From then on it answers for real,
    every 30 minutes.
 
-### Step 8. Done
-- 3 posts a day, comments answered every 30 minutes, token renewed automatically.
+### Step 7. Done
+- 2 posts a day, comments answered every 30 minutes, token renewed automatically.
 - GitHub emails you if anything fails, including when the queue runs empty.
 
 ## How the reply bot behaves
-- Checks the latest 20 posts for comments it hasn't seen, and answers in the commenter's
-  language (Kurdish, Arabic or English), in 1 to 3 sentences, no emoji.
-- Price, timeline or availability questions: never gives numbers, points to
-  hello@33studio.org or 33studio.org.
-- Spam, abuse, politics, religion, or emoji-only comments: no reply.
-- Never names clients, never invents facts, never argues.
+- Every 30 minutes it checks the latest 20 posts for comments it hasn't seen.
+- It replies only when a comment matches a topic, in the commenter's language:
+  - **Price** ("how much", "نرخ", "سعر"): no numbers, points to hello@33studio.org.
+  - **Working together** ("work with", "پڕۆژە", "مشروع"): points to 33studio.org.
+  - **Location** ("where", "کوێ", "أين"): Salim Street, Sulaymaniyah.
+  - **Jobs** ("hiring", "کارمەند", "وظيفة"): asks for a portfolio by email.
+  - **Thanks** ("love", "جوان", "شكرا"): a short thank-you, but never when the comment also
+    sounds doubtful or critical ("but", "meh", "بەڵام", "لكن").
+- Anything else (opinions, tags, emoji, questions it can't answer) gets **no reply**. Answer those
+  yourself; they're the conversations that build culture.
 - At most 10 replies per run. Each comment is answered once (tracked in `replied.json`).
-- Change the AI model with a repository **variable** `HF_MODEL` (default
-  `meta-llama/Llama-3.1-8B-Instruct`; `Qwen/Qwen2.5-7B-Instruct` is a good alternative).
-- The bot's personality lives in `PROMPT` at the top of `replies.py`.
+- Keywords and reply wording live at the top of `replies.py`. After changing them, run
+  `python3 test_replies.py` to check nothing broke.
 
 ## Notes
 - When the queue runs empty, the run fails on purpose and GitHub emails you. Add a new batch.

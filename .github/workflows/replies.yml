@@ -25,8 +25,6 @@ jobs:
         run: python3 replies.py
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_MODEL: ${{ vars.HF_MODEL }}
           DRY_RUN: ${{ vars.DRY_RUN }}
 
       - name: Remember answered comments

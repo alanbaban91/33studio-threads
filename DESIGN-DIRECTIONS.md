@@ -1,4 +1,4 @@
-# 33 Studio: Image Directions, October–November 2026
+# 33 Studio: Image Directions, October–November 2026 (15 directions)
 
 Built from the Affinity mood board, filtered through the culture strategy in `VOICE.md`.
 
@@ -133,6 +133,49 @@ painted bright teal (#53E6D4), soft top light, shallow depth of field focused on
 empty space in the top third.
 **Mark:** #6 (pointing arm), cream, pointing at the teal cube.
 **Headline:** AI will make average free.
+
+## 11. Pomegranate Season (The City · November)
+**Pairs with:** "Autumn in Slemani is a colour palette and a mood board at the same time."
+**Prompt:** One ripe pomegranate split open on a matte ink-black (#101616) surface, deep red seeds
+glistening and a few spilling out, a single dry leaf beside it, low warm side light, rich shadows,
+empty space in the top third.
+**Mark:** #4 (hug), cream, two arms wrapping around the fruit.
+**Headline:** Someone should brand the season.
+
+## 12. The Reed Pen (The Script)
+**Pairs with:** "A language is a brand a thousand years in the making."
+**Prompt:** A traditional calligraphy reed pen (qalam) resting on a small glass ink pot, one drop of
+black ink falling from the nib, on cream (#F5F5DD) handmade paper with a soft deckled edge, the paper
+blank, raking morning light showing the paper texture, empty space in the top third.
+**Mark:** #14 (scribble), ink, a flowing line coming out of the nib, like the first stroke of a letter.
+**Headline:** Its letters deserve better than a default font.
+
+## 13. The All-Nighter (The Scene)
+**Pairs with:** "To the design students in Slemani pulling all-nighters this week."
+**Prompt:** Overhead shot of a student's desk at 3am, a pool of warm light from a desk lamp in an
+otherwise dark deep-teal (#033335) room, an open sketchbook full of rough pencil thumbnails, a
+half-finished tea glass gone cold, eraser crumbs, a phone face down, quiet and intimate, empty
+space in the bottom third.
+**Mark:** #2 (hand gesture), cream, a hand giving a quiet nod of encouragement from the edge.
+**Headline:** Caring this much is the whole career.
+
+## 14. The Edit (The Take)
+**Pairs with:** "Taste isn't what you like. It's what you're willing to say no to."
+**Prompt:** A long empty plinth-like table on a seamless teal (#53E6D4) set with one single
+beautifully made ceramic vase standing at its centre, and at the far end a plain cardboard box
+overflowing with other objects that were swept off the table, minimal, sculptural, soft daylight,
+empty space in the top third.
+**Mark:** #19 (reaching hands), ink, a hand pushing the last extra object towards the box.
+**Headline:** Taste is what you say no to.
+
+## 15. Right to Left (The Script)
+**Pairs with:** "Right-to-left isn't a problem to solve. It's a rhythm to design with."
+**Prompt:** A row of plain cream domino tiles on a matte ink-black (#101616) surface, falling in a
+wave from right to left, captured mid-motion, the first ones on the right already down, the rest
+tipping in sequence, crisp side light, no dots or markings on the tiles, empty space in the
+bottom third.
+**Mark:** #5 (wave arm), cream, an arm tracing the motion from right to left.
+**Headline:** Right to left is a rhythm.
 
 ---
 

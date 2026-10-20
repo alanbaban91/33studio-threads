@@ -44,13 +44,17 @@ Negative prompt (for tools that support one):
 
 ---
 
-## 1. The Tea Glass (The City)
+## 1. The Tea House (The City)
 **Pairs with:** "The tea house was the original co-working space."
-**Prompt:** A single traditional Kurdish tea glass (slim tulip-shaped istikan) filled with deep amber
-tea on a small white saucer with two sugar cubes, a thin curl of steam, placed on a plinth in a fully
-deep-teal (#033335) room, teal walls and floor, one beam of warm window light across the glass,
-empty space in the top third.
-**Mark:** #10 (reaching wave), cream, an arm reaching in from the left towards the glass.
+**The idea, in one line:** before co-working spaces, ideas were made at tea house tables, where
+strangers of every age shared a table. The photo has to show that sharing, not just a glass.
+**Prompt:** Black-and-white documentary photograph inside a busy traditional Middle Eastern tea
+house, an elderly man in a classic jacket and a young designer with an open laptop and a sketchbook
+sharing one small table, both mid-conversation and laughing, small tulip-shaped tea glasses on
+saucers between them, other tables and old wall photos softly out of focus behind, warm window
+light, candid and real, empty space in the top third.
+**Mark:** #10 (reaching wave), cream, an arm reaching in from the edge with a fresh tea glass, the
+refill that keeps the meeting going.
 **Headline:** The original co-working space.
 
 ## 2. The Bazaar Palette (The City)

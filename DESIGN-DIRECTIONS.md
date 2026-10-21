@@ -56,6 +56,7 @@ light, candid and real, empty space in the top third.
 **Mark:** #10 (reaching wave), cream, an arm reaching in from the edge with a fresh tea glass, the
 refill that keeps the meeting going.
 **Headline:** The original co-working space.
+**Subheadline:** Slemani's tea houses had shared tables, long arguments and free refills long before anyone rented desks by the month.
 
 ## 2. The Bazaar Palette (The City)
 **Pairs with:** "Every bazaar has a colour palette nobody designed."
@@ -65,6 +66,7 @@ swatches on a matte ink-black (#101616) surface, a few grains scattered, hard so
 above, empty space in the bottom third.
 **Mark:** #20 (idea / lightbulb), cream, top right, as if the idea came from the colours.
 **Headline:** Every bazaar has a palette nobody designed.
+**Subheadline:** Turmeric, sumac, dried mint and chilli, sorted by whoever ran the stall.
 
 ## 3. The Hand-Painted Sign (The Script)
 **Pairs with:** "Hand-painted signs are our city's real type foundry."
@@ -76,6 +78,7 @@ a tea seller's cart in the foreground, film grain, straight-on composition, empt
 bottom third.
 **Mark:** #6 (pointing arm), cream, pointing up at the sign.
 **Headline:** Our city's real type foundry.
+**Subheadline:** Hand-painted shop signs from Slemani, collected one street at a time.
 
 ## 4. The Bin (The Craft · Kill List)
 **Pairs with:** "Most of what we draw ends up in the bin. We keep the bin."
@@ -85,6 +88,7 @@ shot from a low angle on a seamless cream (#F5F5DD) backdrop, soft daylight, emp
 top third.
 **Mark:** #18 (holding something big), ink, two arms lifting one paper ball out of the bin.
 **Headline:** We keep the bin.
+**Subheadline:** Every rejected sketch is a decision we no longer have to make.
 
 ## 5. The Napkin (The Craft)
 **Pairs with:** "If it doesn't work as a sketch on a napkin, it won't work on a billboard."
@@ -92,7 +96,8 @@ top third.
 pencil sketch of a simple logo on it, a short pencil beside it, a faint tea-glass ring stain,
 overhead angle, crisp morning light, empty space in the top third.
 **Mark:** #14 (scribble), ink, a scribble line running off the napkin's sketch.
-**Headline:** Napkin first. Billboard second.
+**Headline:** If it fits on a napkin, it can fill a billboard.
+**Subheadline:** Every idea at 33 Studio gets drawn small before it gets made big.
 
 ## 6. Studio Note (The Craft)
 **Pairs with:** "Studio note: we killed our favourite idea today."
@@ -103,6 +108,7 @@ slight motion blur, shot from behind their shoulders so faces are mostly hidden,
 space in the top third.
 **Mark:** #11 (hand with motion lines), cream, a hand waving the idea goodbye.
 **Headline:** We killed our favourite idea today.
+**Subheadline:** It was clever, and it was wrong for the brand.
 
 ## 7. The Empty Stool (The Scene · Open Desk)
 **Pairs with:** "Open Desk: what did you make this week?"
@@ -111,6 +117,7 @@ an empty photo studio, one large softbox on a stand to the left, a small dry bra
 corner, warm daylight, wide shot, calm and inviting, empty space in the top third.
 **Mark:** #3 (high-five), ink, two hands meeting above the stool.
 **Headline:** This seat is for your work.
+**Subheadline:** Open Desk: post what you made this week in the replies, finished or not.
 
 ## 8. Pressed Against the Glass (The Scene)
 **Pairs with:** "Kurdistan has more creative talent than it has stages for it."
@@ -119,6 +126,7 @@ pressed playfully against a large shop window from inside, palms and cheeks on t
 curious, shot from outside the window, film grain, empty space in the bottom third.
 **Mark:** #13 (cheering, burst lines), cream, bursting out from the top of the group.
 **Headline:** More talent than stages.
+**Subheadline:** Kurdistan's illustrators, photographers and calligraphers deserve a bigger room. Tag one.
 
 ## 9. Goyzha Light (The City · autumn)
 **Pairs with:** "Goyzha at sunset does something to the light that no filter has managed to copy."
@@ -128,6 +136,7 @@ of hazy hills behind, low warm sun, the whole image graded into deep teal shadow
 highlights, quiet and calm, empty space in the top third (sky).
 **Mark:** #15 (motion wave), cream, drawn across the sky like a gesture tracing the light.
 **Headline:** Designers call it inspiration.
+**Subheadline:** Everyone in Slemani just calls it the view from Goyzha.
 
 ## 10. One of a Kind (The Take)
 **Pairs with:** "AI will make average free. That's good news for anyone willing to be specific."
@@ -137,6 +146,7 @@ painted bright teal (#53E6D4), soft top light, shallow depth of field focused on
 empty space in the top third.
 **Mark:** #6 (pointing arm), cream, pointing at the teal cube.
 **Headline:** AI will make average free.
+**Subheadline:** The work worth paying for is the one cube nobody else carved.
 
 ## 11. Pomegranate Season (The City · November)
 **Pairs with:** "Autumn in Slemani is a colour palette and a mood board at the same time."
@@ -145,6 +155,7 @@ glistening and a few spilling out, a single dry leaf beside it, low warm side li
 empty space in the top third.
 **Mark:** #4 (hug), cream, two arms wrapping around the fruit.
 **Headline:** Someone should brand the season.
+**Subheadline:** Autumn in Kurdistan arrives in pomegranate red.
 
 ## 12. The Reed Pen (The Script)
 **Pairs with:** "A language is a brand a thousand years in the making."
@@ -152,7 +163,8 @@ empty space in the top third.
 black ink falling from the nib, on cream (#F5F5DD) handmade paper with a soft deckled edge, the paper
 blank, raking morning light showing the paper texture, empty space in the top third.
 **Mark:** #14 (scribble), ink, a flowing line coming out of the nib, like the first stroke of a letter.
-**Headline:** Its letters deserve better than a default font.
+**Headline:** Kurdish deserves better than a default font.
+**Subheadline:** We draw Kurdish, Arabic and English letterforms side by side, from the first sketch.
 
 ## 13. The All-Nighter (The Scene)
 **Pairs with:** "To the design students in Slemani pulling all-nighters this week."
@@ -162,6 +174,7 @@ half-finished tea glass gone cold, eraser crumbs, a phone face down, quiet and i
 space in the bottom third.
 **Mark:** #2 (hand gesture), cream, a hand giving a quiet nod of encouragement from the edge.
 **Headline:** Caring this much is the whole career.
+**Subheadline:** For every design student in Slemani still sketching at 3am.
 
 ## 14. The Edit (The Take)
 **Pairs with:** "Taste isn't what you like. It's what you're willing to say no to."
@@ -171,6 +184,7 @@ overflowing with other objects that were swept off the table, minimal, sculptura
 empty space in the top third.
 **Mark:** #19 (reaching hands), ink, a hand pushing the last extra object towards the box.
 **Headline:** Taste is what you say no to.
+**Subheadline:** Good design starts by deciding what stays off the table.
 
 ## 15. Right to Left (The Script)
 **Pairs with:** "Right-to-left isn't a problem to solve. It's a rhythm to design with."
@@ -180,6 +194,7 @@ tipping in sequence, crisp side light, no dots or markings on the tiles, empty s
 bottom third.
 **Mark:** #5 (wave arm), cream, an arm tracing the motion from right to left.
 **Headline:** Right to left is a rhythm.
+**Subheadline:** Kurdish and Arabic pages read from the other side, and the layout should follow.
 
 ---
 

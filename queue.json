@@ -1,38 +1,5 @@
 [
   {
-    "mood": "scene",
-    "text": "Open Desk: who's the most underrated creative in Kurdistan right now? Illustrator, photographer, calligrapher, anyone.\n\nName them below and tell us why. We'll start following."
-  },
-  {
-    "mood": "friendly",
-    "kicker": "First call",
-    "color": "cream",
-    "mark": 20,
-    "slides": [
-      {
-        "title": "What happens in our first call.",
-        "body": "No pitch deck. No sales script."
-      },
-      {
-        "title": "You talk. We listen.",
-        "body": "Where you are, where you want to go, what's in the way."
-      },
-      {
-        "title": "We ask the awkward questions.",
-        "body": "Who exactly is this for? What would you never do?"
-      },
-      {
-        "title": "We tell you what we'd do.",
-        "body": "An honest first opinion, even if it's not what you expected."
-      },
-      {
-        "title": "Book yours.",
-        "body": "33studio.org"
-      }
-    ],
-    "text": "A first conversation with 33 Studio costs you nothing but an hour. Here's what to expect.\n\n33studio.org"
-  },
-  {
     "mood": "city",
     "photos": [
       "photos/01-tea-house.jpg"
@@ -41,110 +8,10 @@
   },
   {
     "mood": "take",
-    "kicker": "The Take",
-    "color": "teal",
-    "mark": 12,
-    "slides": [
-      {
-        "title": "The best brands look like where they're from.",
-        "body": "Not like everywhere else."
-      }
-    ],
-    "text": "Our streets, our script and our humour aren't something to hide behind a generic look.\n\nThey're the advantage. The most interesting brands of the next decade will look like where they're from."
-  },
-  {
-    "mood": "craft",
-    "photos": [
-      "photos/04-bin.jpg"
-    ],
-    "text": "A sketch goes in the bin once we've decided it isn't the one. Keeping the bin means nobody spends next week arguing for an idea we already tested and dropped."
-  },
-  {
-    "mood": "friendly",
-    "kicker": "Made in Sulaymaniyah",
-    "color": "teal",
-    "mark": 6,
-    "slides": [
-      {
-        "title": "Made in Sulaymaniyah. Made for anywhere.",
-        "body": "A creative agency from Kurdistan, for brands with bigger plans."
-      }
-    ],
-    "text": "Great brands don't need to come from a capital city. They need a point of view and people who care about the craft.\n\nWe're both. 33studio.org"
-  },
-  {
-    "mood": "city",
-    "photos": [
-      "photos/11-pomegranate.jpg"
-    ],
-    "text": "Every autumn the market stalls fill with pomegranates, split open so you can see the red inside. If a brand owned that colour for a season, people would remember it."
-  },
-  {
-    "mood": "script",
-    "photos": [
-      "photos/12-side-by-side.jpg"
-    ],
-    "text": "Kurdish, Arabic and English don't share a direction, a baseline or a rhythm. Drawing them together from the first pencil line is how a bilingual brand avoids looking translated in two of its three languages."
-  },
-  {
-    "mood": "craft",
-    "kicker": "Kill List",
-    "color": "ink",
-    "mark": 11,
-    "slides": [
-      {
-        "title": "Why we killed it: it needed a caption to work.",
-        "body": "If an idea needs explaining, it isn't finished."
-      }
-    ],
-    "text": "Kill List is where we share ideas that didn't make it, and why.\n\nThis one was beautiful and confusing. Beautiful is easy. Clear is the work."
-  },
-  {
-    "mood": "scene",
-    "photos": [
-      "photos/13-all-nighter.jpg"
-    ],
-    "text": "To every student in Slemani with a sketchbook open at 3am and a deadline at 9: the habit of caring this much about one curve or one colour is exactly what clients end up paying for. Get some sleep when you can."
-  },
-  {
-    "mood": "take",
     "photos": [
       "photos/10-average.jpg"
     ],
     "text": "Ask any AI tool for a logo and you'll get something competent in seconds. So will your competitor. Competent is about to cost nothing; what still costs money is the decision that makes a brand recognisable, like the colour nobody else would pick or the line only you would say.\n\nThat's the work we do. 33studio.org"
-  },
-  {
-    "mood": "guide",
-    "kicker": "Brand check",
-    "color": "ink",
-    "mark": 1,
-    "slides": [
-      {
-        "title": "The five-minute brand check.",
-        "body": "Be honest. Count your yeses."
-      },
-      {
-        "title": "Same logo everywhere?",
-        "body": "Signs, social, invoices, uniforms. All the same version."
-      },
-      {
-        "title": "Can you say it in one sentence?",
-        "body": "What you do, and why it matters."
-      },
-      {
-        "title": "Would a stranger recognise you?",
-        "body": "Without seeing your name."
-      },
-      {
-        "title": "Does it still fit?",
-        "body": "Your brand should be as ambitious as your business."
-      },
-      {
-        "title": "Fewer than four yeses?",
-        "body": "Let's talk. 33studio.org"
-      }
-    ],
-    "text": "Most brands don't need a revolution. They need someone to notice what's quietly not working.\n\nTake the check."
   },
   {
     "mood": "city",
@@ -157,19 +24,39 @@
     "text": "Slemani Type, part one.\n\nLong before fonts arrived on a computer, shop names in this city were painted by hands that knew the letters. Some of those signs are still up, faded and beautiful.\n\nSeen one we should photograph? Tell us the street."
   },
   {
-    "mood": "script",
-    "text": "Right-to-left isn't a problem to solve. It's a rhythm to design with.\n\nThe page reads differently. So should the design."
+    "mood": "scene",
+    "photos": [
+      "photos/13-all-nighter.jpg"
+    ],
+    "text": "To every student in Slemani with a sketchbook open at 3am and a deadline at 9: the habit of caring this much about one curve or one colour is exactly what clients end up paying for. Get some sleep when you can."
   },
   {
     "mood": "craft",
     "photos": [
-      "photos/06-studio-note.jpg"
+      "photos/04-bin.jpg"
     ],
-    "text": "Some ideas are clever and still wrong for the brand. They're the hardest to drop, because everyone in the room likes them.\n\nIf you've ever deleted your favourite draft, you know the feeling."
+    "text": "A sketch goes in the bin once we've decided it isn't the one. Keeping the bin means nobody spends next week arguing for an idea we already tested and dropped."
   },
   {
-    "mood": "take",
-    "text": "Taste isn't what you like. It's what you're willing to say no to."
+    "mood": "city",
+    "photos": [
+      "photos/11-pomegranate.jpg"
+    ],
+    "text": "Every autumn the market stalls fill with pomegranates, split open so you can see the red inside. If a brand owned that colour for a season, people would remember it."
+  },
+  {
+    "mood": "scene",
+    "photos": [
+      "photos/08-more-talent.jpg"
+    ],
+    "text": "Kurdistan has illustrators, photographers and calligraphers doing work that would hold up anywhere, and too few walls and screens to show it.\n\nTag one creative whose work more people should see. We'll go and look at every name in the replies."
+  },
+  {
+    "mood": "script",
+    "photos": [
+      "photos/12-side-by-side.jpg"
+    ],
+    "text": "Kurdish, Arabic and English don't share a direction, a baseline or a rhythm. Drawing them together from the first pencil line is how a bilingual brand avoids looking translated in two of its three languages."
   },
   {
     "mood": "craft",
@@ -179,32 +66,6 @@
     "text": "If an idea needs a screen, three fonts and a render before it makes sense, it isn't ready yet. Draw it on whatever is on the table. When the person across from you gets it in five seconds, it's worth building."
   },
   {
-    "mood": "guide",
-    "kicker": "Real estate",
-    "color": "ink",
-    "mark": 19,
-    "slides": [
-      {
-        "title": "Sell the building before the first brick.",
-        "body": "3D renders, films and branding for new developments."
-      }
-    ],
-    "text": "Buyers can't walk through a building that doesn't exist yet. With 3D renders and a brand worth believing, they can picture living there.\n\nWe help developments sell early. 33studio.org"
-  },
-  {
-    "mood": "scene",
-    "kicker": "Open Desk",
-    "color": "cream",
-    "mark": 13,
-    "slides": [
-      {
-        "title": "What did you make this week?",
-        "body": "Show us. Finished or not."
-      }
-    ],
-    "text": "Open Desk: post something you made this week in the replies. A sketch, a photo, a layout, a half-idea.\n\nWe'll look at every one."
-  },
-  {
     "mood": "city",
     "photos": [
       "photos/09-goyzha.jpg"
@@ -212,46 +73,17 @@
     "text": "Drive up to Goyzha around sunset and the city turns into layers of hills, haze and the first lights coming on below. Every designer in Slemani has a photo like this somewhere on their phone."
   },
   {
+    "mood": "craft",
+    "photos": [
+      "photos/06-studio-note.jpg"
+    ],
+    "text": "Some ideas are clever and still wrong for the brand. They're the hardest to drop, because everyone in the room likes them.\n\nIf you've ever deleted your favourite draft, you know the feeling."
+  },
+  {
     "mood": "city",
     "photos": [
       "photos/02-bazaar.jpg"
     ],
     "text": "Nobody at the spice stall put turmeric next to sumac because a mood board said so. They put it where customers would see it, and it still looks better than most brand palettes.\n\nNext time you're in the bazaar, look at the stalls the way a designer would."
-  },
-  {
-    "mood": "scene",
-    "text": "Thank you to everyone who replied, argued, shared and showed us their work this month.\n\nYou're the culture we keep talking about."
-  },
-  {
-    "mood": "script",
-    "text": "Which Kurdish word is the most beautiful to look at, not just to say?\n\nWe're asking for a reason."
-  },
-  {
-    "mood": "craft",
-    "text": "Studio note: the best feedback this week came from someone who isn't a designer.\n\nThey didn't know the rules. They knew what they felt. Listen to those people."
-  },
-  {
-    "mood": "friendly",
-    "kicker": "Brand voice",
-    "color": "teal",
-    "mark": 10,
-    "slides": [
-      {
-        "title": "Your brand has a voice. Does it sound like you?",
-        "body": "Bilingual copy and tone of voice."
-      }
-    ],
-    "text": "Most brands look designed and sound improvised.\n\nWe write how your brand speaks, in Kurdish, Arabic and English, so every caption sounds like the same person. 33studio.org"
-  },
-  {
-    "mood": "take",
-    "text": "Trends travel fast now. A look that starts somewhere else arrives here within a week.\n\nThe brands that last aren't the fastest to copy. They're the ones worth copying."
-  },
-  {
-    "mood": "scene",
-    "photos": [
-      "photos/08-more-talent.jpg"
-    ],
-    "text": "Kurdistan has illustrators, photographers and calligraphers doing work that would hold up anywhere, and too few walls and screens to show it.\n\nTag one creative whose work more people should see. We'll go and look at every name in the replies."
   }
 ]

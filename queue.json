@@ -1,89 +1,120 @@
 [
   {
     "mood": "city",
-    "photos": [
-      "photos/01-tea-house.jpg"
-    ],
-    "text": "Before anyone rented desks by the month, Slemani had tea houses: one small table, two strangers, and a glass that never stayed empty for long. Plenty of good ideas in this city were first argued over tea.\n\nWhich tea house is yours?"
-  },
-  {
-    "mood": "take",
-    "photos": [
-      "photos/10-average.jpg"
-    ],
-    "text": "Ask any AI tool for a logo and you'll get something competent in seconds. So will your competitor. Competent is about to cost nothing; what still costs money is the decision that makes a brand recognisable, like the colour nobody else would pick or the line only you would say.\n\nThat's the work we do. 33studio.org"
-  },
-  {
-    "mood": "city",
-    "photos": [
-      "photos/03-signs-1.jpg",
-      "photos/03-signs-2.jpg",
-      "photos/03-signs-3.jpg",
-      "photos/03-signs-4.jpg"
-    ],
-    "text": "Slemani Type, part one.\n\nLong before fonts arrived on a computer, shop names in this city were painted by hands that knew the letters. Some of those signs are still up, faded and beautiful.\n\nSeen one we should photograph? Tell us the street."
-  },
-  {
-    "mood": "scene",
-    "photos": [
-      "photos/13-all-nighter.jpg"
-    ],
-    "text": "To every student in Slemani with a sketchbook open at 3am and a deadline at 9: the habit of caring this much about one curve or one colour is exactly what clients end up paying for. Get some sleep when you can."
+    "text": "Slemani wakes up in a particular order: bread ovens, tea, traffic, and then the first argument about football.\n\nWhat's the first sound of your morning?"
   },
   {
     "mood": "craft",
-    "photos": [
-      "photos/04-bin.jpg"
-    ],
-    "text": "A sketch goes in the bin once we've decided it isn't the one. Keeping the bin means nobody spends next week arguing for an idea we already tested and dropped."
-  },
-  {
-    "mood": "city",
-    "photos": [
-      "photos/11-pomegranate.jpg"
-    ],
-    "text": "Every autumn the market stalls fill with pomegranates, split open so you can see the red inside. If a brand owned that colour for a season, people would remember it."
-  },
-  {
-    "mood": "scene",
-    "photos": [
-      "photos/08-more-talent.jpg"
-    ],
-    "text": "Kurdistan has illustrators, photographers and calligraphers doing work that would hold up anywhere, and too few walls and screens to show it.\n\nTag one creative whose work more people should see. We'll go and look at every name in the replies."
+    "text": "Print your logo the size of a coin and pin it to a wall for a day. If you can still read it from across the room by the evening, it's ready for a shop sign."
   },
   {
     "mood": "script",
-    "photos": [
-      "photos/12-side-by-side.jpg"
-    ],
-    "text": "Kurdish, Arabic and English don't share a direction, a baseline or a rhythm. Drawing them together from the first pencil line is how a bilingual brand avoids looking translated in two of its three languages."
+    "text": "Kurdish has letters an English designer never has to draw, like ڕ and ڵ. For anyone who loves type, that's extra material to play with."
+  },
+  {
+    "mood": "scene",
+    "text": "Open Desk: who's the most underrated creative in Kurdistan right now? Illustrator, photographer, calligrapher, anyone.\n\nName them below and tell us why. We'll start following."
+  },
+  {
+    "mood": "take",
+    "text": "A brand guide that nobody opens is a very expensive PDF."
+  },
+  {
+    "mood": "scene",
+    "text": "Open Desk: show us the first thing you ever designed. Be honest; the worse it is, the better."
   },
   {
     "mood": "craft",
-    "photos": [
-      "photos/05-napkin.jpg"
-    ],
-    "text": "If an idea needs a screen, three fonts and a render before it makes sense, it isn't ready yet. Draw it on whatever is on the table. When the person across from you gets it in five seconds, it's worth building."
+    "text": [
+      "How we start a logo, in four steps. A short thread.",
+      "1. A conversation, laptops closed. We ask what the business would never do.",
+      "2. Words before shapes. We write the one sentence the brand has to say.",
+      "3. Pencil sketches, fast and rough, a lot of them.",
+      "4. Only then the screen, and only for the few sketches that survived the arguing.\n\nWant to see the process up close? 33studio.org"
+    ]
+  },
+  {
+    "mood": "script",
+    "text": "Right-to-left isn't a problem to solve. It's a rhythm to design with.\n\nThe page reads differently. So should the design."
   },
   {
     "mood": "city",
-    "photos": [
-      "photos/09-goyzha.jpg"
-    ],
-    "text": "Drive up to Goyzha around sunset and the city turns into layers of hills, haze and the first lights coming on below. Every designer in Slemani has a photo like this somewhere on their phone."
+    "text": "The best wayfinding system in this city is still “turn left at the old bakery.”\n\nEvery brand should be that easy to remember."
+  },
+  {
+    "mood": "take",
+    "text": "Most logos fail at the size they're used most: tiny, on a phone, next to forty other logos. Design for that size first."
+  },
+  {
+    "mood": "script",
+    "text": "Ask a kid in Slemani to write their name and they'll switch between two alphabets without thinking about it.\n\nOur brands should be that fluent."
+  },
+  {
+    "mood": "take",
+    "text": "Taste isn't what you like. It's what you're willing to say no to."
+  },
+  {
+    "mood": "scene",
+    "text": "Respect to the sign painters, tailors, bakers and calligraphers of this city. They were doing branding long before anyone called it that."
+  },
+  {
+    "mood": "take",
+    "text": "Copying a competitor's look is the most expensive way to stay in second place."
+  },
+  {
+    "mood": "scene",
+    "text": "Which brand from Kurdistan would you wear on a T-shirt, unpaid, just because you like it?"
+  },
+  {
+    "mood": "script",
+    "text": "Which Kurdish word is the most beautiful to look at, not just to say?\n\nWe're asking for a reason."
   },
   {
     "mood": "craft",
-    "photos": [
-      "photos/06-studio-note.jpg"
-    ],
-    "text": "Some ideas are clever and still wrong for the brand. They're the hardest to drop, because everyone in the room likes them.\n\nIf you've ever deleted your favourite draft, you know the feeling."
+    "text": "When a brief says “modern,” ask what that means. The answer is usually the real brief."
+  },
+  {
+    "mood": "take",
+    "text": "Good design in Kurdistan doesn't need permission from Dubai, London or anywhere else."
+  },
+  {
+    "mood": "script",
+    "text": "Arabic-script logos often get squeezed into a box that was drawn for English. Give them their own space and the curves start to make sense."
+  },
+  {
+    "mood": "craft",
+    "text": "Studio note: the best feedback this week came from someone who isn't a designer.\n\nThey didn't know the rules. They knew what they felt. Listen to those people."
+  },
+  {
+    "mood": "scene",
+    "text": "If you're a designer in Kurdistan who has never shown your work online, post one piece this week and tag us. We'll be your first comment."
   },
   {
     "mood": "city",
-    "photos": [
-      "photos/02-bazaar.jpg"
-    ],
-    "text": "Nobody at the spice stall put turmeric next to sumac because a mood board said so. They put it where customers would see it, and it still looks better than most brand palettes.\n\nNext time you're in the bazaar, look at the stalls the way a designer would."
+    "text": "Autumn in Slemani: the first cold morning, school bags everywhere, and someone's grandmother insisting you take a jacket."
+  },
+  {
+    "mood": "take",
+    "text": "Every brand has a voice, whether it chose one or not. The ones that chose sound like a person; the rest sound like a form."
+  },
+  {
+    "mood": "take",
+    "text": "Trends travel fast now. A look that starts somewhere else arrives here within a week.\n\nThe brands that last aren't the fastest to copy. They're the ones worth copying."
+  },
+  {
+    "mood": "craft",
+    "text": "Be honest: how many files on your desktop are called final-final? No judgement here."
+  },
+  {
+    "mood": "city",
+    "text": "Name a shop in Slemani whose sign you could draw from memory. That's what a strong brand looks like."
+  },
+  {
+    "mood": "craft",
+    "text": "Studio habit worth stealing: before presenting anything, explain it to someone outside the project in one sentence. If they don't get it, neither will the client."
+  },
+  {
+    "mood": "scene",
+    "text": "Thank you to everyone who replied, argued, shared and showed us their work this month.\n\nYou're the culture we keep talking about."
   }
 ]

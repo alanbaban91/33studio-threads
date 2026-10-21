@@ -15,6 +15,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 SITE = "33studio.org"
 API = "https://graph.threads.net/v1.0"
 MAX_LEN = 500                     # Threads text limit per post
+QUEUE = os.environ.get("QUEUE", "queue.json")   # photos-queue.json for the 3-a-week image posts
 W, H, M = 1080, 1350, 96          # 4:5 portrait, outer margin
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONTS, ASSETS = os.path.join(HERE, "fonts"), os.path.join(HERE, "assets")
@@ -327,10 +328,10 @@ def publish(params, token):
 
 
 def cmd_render():
-    queue = load("queue.json", [])
+    queue = load(QUEUE, [])
     if not queue:
         # Fails on purpose so GitHub emails you: time to add a new batch.
-        sys.exit("Threads queue is empty. Add a new batch to queue.json.")
+        sys.exit(f"{QUEUE} is empty. Add a new batch.")
     check(queue[0], 1)
     for f in os.listdir("media"):
         if f.endswith(".jpg"):
@@ -343,7 +344,7 @@ def cmd_render():
 
 def cmd_publish():
     token = os.environ.get("THREADS_TOKEN") or sys.exit("THREADS_TOKEN is not set.")
-    queue, names = load("queue.json", []), load("media/next.json", [])
+    queue, names = load(QUEUE, []), load("media/next.json", [])
     post, texts = queue[0], parts(queue[0])
 
     if not names:
@@ -376,7 +377,7 @@ def cmd_publish():
     posted = load("posted.json", [])
     posted.append({"ids": ids, "posted_at": datetime.datetime.now(datetime.timezone.utc).isoformat(), **post})
     save("posted.json", posted)
-    save("queue.json", queue[1:])
+    save(QUEUE, queue[1:])
     for n in names + ["next.json"]:
         p = os.path.join("media", n)
         if os.path.exists(p):
@@ -387,7 +388,7 @@ def cmd_publish():
 
 
 def cmd_preview():
-    queue = load("queue.json", [])
+    queue = load(QUEUE, [])
     for i, post in enumerate(queue, 1):
         check(post, i)
         render_post(post, "preview", f"{i:02d}-{post.get('mood', 'post')}")

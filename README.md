@@ -1,6 +1,7 @@
 # 33Studio Threads Engine
 
-Posts to the 33Studio Threads account 2 times a day (09:00 and 20:00 Sulaymaniyah time, triggered by cron-job.org)
+Posts text to the 33Studio Threads account daily from `queue.json` (times set in cron-job.org), and
+image posts 3 times a week from `photos-queue.json` (Sun, Tue, Thu at 17:00 Sulaymaniyah time)
 from `queue.json`, using the official Threads API and free GitHub Actions. Every 30 minutes it
 also answers new comments that ask about price, working together, location or jobs, or that
 say thanks, in Kurdish, Arabic or English. No AI and no extra accounts.

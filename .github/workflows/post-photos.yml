@@ -1,0 +1,45 @@
+name: Post photos to Threads (33Studio)
+
+on:
+  schedule:
+    - cron: "0 14 * * 0,2,4"   # Sun, Tue, Thu at 17:00 Sulaymaniyah time (UTC+3)
+  workflow_dispatch: {}   # lets you trigger a post manually
+
+permissions:
+  contents: write
+
+concurrency:
+  group: threads-33studio
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pillow
+        run: pip install pillow
+
+      - name: Render cards (image posts only)
+        run: QUEUE=photos-queue.json python3 post.py render
+
+      - name: Upload cards so Threads can fetch them
+        run: |
+          git config user.name "33studio-threads-bot"
+          git config user.email "33studio-threads-bot@users.noreply.github.com"
+          git add media
+          git diff --cached --quiet || git commit -m "Render Threads cards"
+          git pull --rebase && git push
+
+      - name: Publish to Threads
+        run: QUEUE=photos-queue.json python3 post.py publish
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+
+      - name: Save updated queue
+        if: always()
+        run: |
+          git add -A photos-queue.json posted.json media
+          git diff --cached --quiet || git commit -m "Posted to Threads"
+          git pull --rebase && git push

@@ -4,9 +4,12 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Ask Instagram who this token belongs to (posts nothing)
+      - name: Inspect token shape (prints only 4 characters)
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
         run: |
-          curl -s "https://graph.instagram.com/me?fields=user_id,username,account_type&access_token=${IG_TOKEN}"; echo
-          curl -s "https://graph.instagram.com/me/content_publishing_limit?fields=quota_usage,config&access_token=${IG_TOKEN}"; echo
+          T="$IG_TOKEN"
+          echo "starts=${T:0:4} length=${#T}"
+          case "$T" in *" "*) echo "contains a space";; esac
+          [ "$T" != "$(printf '%s' "$T" | tr -d '\n\r')" ] && echo "contains a line break"
+          echo "facebook graph says:"; curl -s "https://graph.facebook.com/me?access_token=${T}" | head -c 200; echo

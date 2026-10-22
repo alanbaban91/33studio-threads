@@ -1,0 +1,12 @@
+name: Check Instagram token (temporary)
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask Instagram who this token belongs to (posts nothing)
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: |
+          curl -s "https://graph.instagram.com/me?fields=user_id,username,account_type&access_token=${IG_TOKEN}"; echo
+          curl -s "https://graph.instagram.com/me/content_publishing_limit?fields=quota_usage,config&access_token=${IG_TOKEN}"; echo

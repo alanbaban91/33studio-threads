@@ -1,4 +1,4 @@
-name: Post photos to Threads (33Studio)
+name: Post photos to Instagram + Threads (33Studio)
 
 on:
   schedule:
@@ -32,7 +32,15 @@ jobs:
           git diff --cached --quiet || git commit -m "Render Threads cards"
           git pull --rebase && git push
 
+      - name: Publish to Instagram
+        id: ig
+        run: QUEUE=photos-queue.json python3 ig.py
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+
       - name: Publish to Threads
+        # still post to Threads if only Instagram failed (the run is marked failed, so you get an email)
+        if: success() || steps.ig.outcome == 'failure'
         run: QUEUE=photos-queue.json python3 post.py publish
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}

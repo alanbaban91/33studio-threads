@@ -1,4 +1,4 @@
-name: Refresh Threads token (33Studio)
+name: Refresh Threads + Instagram tokens (33Studio)
 
 on:
   schedule:
@@ -22,3 +22,18 @@ jobs:
           echo "::add-mask::$NEW"
           gh secret set THREADS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
           echo "Token refreshed."
+
+      - name: Refresh Instagram token (skipped until IG_TOKEN is set)
+        env:
+          OLD_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          [ -z "$OLD_TOKEN" ] && { echo "No IG_TOKEN yet."; exit 0; }
+          NEW=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${OLD_TOKEN}" | jq -r .access_token)
+          if [ -z "$NEW" ] || [ "$NEW" = "null" ]; then
+            echo "Instagram token refresh failed. Generate a new one and update IG_TOKEN."
+            exit 1
+          fi
+          echo "::add-mask::$NEW"
+          gh secret set IG_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
+          echo "Instagram token refreshed."

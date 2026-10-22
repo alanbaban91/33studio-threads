@@ -1,7 +1,8 @@
 # 33Studio Threads Engine
 
 Posts text to the 33Studio Threads account daily from `queue.json` (times set in cron-job.org), and
-image posts 3 times a week from `photos-queue.json` (Sun, Tue, Thu at 17:00 Sulaymaniyah time)
+image posts 3 times a week from `photos-queue.json` (Sun, Tue, Thu at 17:00 Sulaymaniyah time),
+to Threads and to the 33Studio Instagram, with the same images and caption
 from `queue.json`, using the official Threads API and free GitHub Actions. Every 30 minutes it
 also answers new comments that ask about price, working together, location or jobs, or that
 say thanks, in Kurdish, Arabic or English. No AI and no extra accounts.
@@ -107,6 +108,28 @@ on Threads, and `queue.json` has one post fewer.
 ### Step 7. Done
 - 2 posts a day, comments answered every 30 minutes, token renewed automatically.
 - GitHub emails you if anything fails, including when the queue runs empty.
+
+## Instagram (image posts only)
+Each image post goes to Instagram first, then Threads, in the same run. Until `IG_TOKEN` is set,
+the Instagram step skips and only Threads posts. Uses the **33Studio Threads** Meta app, not a
+personal one.
+
+1. **Make the 33Studio Instagram a professional account** (Instagram > Settings > Account type and
+   tools > Switch to professional account > Business). Skip if it already is.
+2. **Add Instagram to the 33Studio Threads Meta app.** developers.facebook.com > the app >
+   Use cases > **Add use cases** > *Manage messaging & content on Instagram*.
+3. In that use case, open **API setup with Instagram login**. Under Permissions, make sure
+   `instagram_business_basic` and `instagram_business_content_publish` are added.
+4. If Meta asks for a tester: App roles > Roles > Add people > **Instagram Tester** > the 33Studio
+   Instagram username. Accept on Instagram, logged in as 33Studio: Settings > Website permissions >
+   Apps and websites > **Tester invites** > Accept.
+5. Back in **API setup with Instagram login** > **Generate access tokens** > Add account > log in
+   as **33Studio** (not your personal Instagram) > approve > copy the token.
+6. GitHub repo > Settings > Secrets and variables > Actions > New repository secret:
+   `IG_TOKEN` = the token. It's renewed automatically with the Threads token, twice a month.
+
+Test: Actions > **Post photos to Instagram + Threads** > Run workflow. Note this posts the next
+image post on both platforms for real.
 
 ## How the reply bot behaves
 - Every 30 minutes it checks the latest 20 posts for comments it hasn't seen.

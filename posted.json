@@ -346,5 +346,13 @@
     "posted_at": "2026-10-24T10:00:44.668170+00:00",
     "mood": "city",
     "text": "The best wayfinding system in this city is still “turn left at the old bakery.”\n\nEvery brand should be that easy to remember."
+  },
+  {
+    "ids": [
+      "17912853309480747"
+    ],
+    "posted_at": "2026-10-24T16:00:44.986391+00:00",
+    "mood": "take",
+    "text": "Most logos fail at the size they're used most: tiny, on a phone, next to forty other logos. Design for that size first."
   }
 ]

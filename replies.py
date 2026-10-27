@@ -8,6 +8,7 @@ match nothing get no reply, which is safer than a wrong one.
 """
 import os, re, sys, zlib
 from post import api, publish, load, save
+from replylog import log_reply
 
 SEEN = "replied.json"
 MAX_REPLIES = 10      # per run, so a spam wave can't flood the account
@@ -98,6 +99,7 @@ def main():
             if reply and not dry:
                 publish({"media_type": "TEXT", "text": reply, "reply_to_id": c["id"]}, token)
                 sent += 1
+            log_reply("Threads", c, reply, dry)
             if not dry:
                 seen.add(c["id"])
                 save(SEEN, sorted(seen))   # save as we go, so a crash never double-replies

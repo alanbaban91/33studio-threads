@@ -1,0 +1,20 @@
+name: Watch the queue (Control House)
+
+# Fails when a queue has about two days of posts left, so GitHub emails you.
+on:
+  schedule:
+    - cron: "0 6 * * *"   # 09:00 Baghdad time
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check how many posts are left
+        run: python3 watch.py
+        env:
+          QUEUES: "queue.json:4,photos-queue.json:2"

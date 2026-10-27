@@ -44,15 +44,16 @@ def metric_values(data):
 def threads(token, errors):
     posts = get(THREADS, "me/threads", {"fields": "id,text,timestamp,permalink,media_type", "limit": POSTS,
                                         "access_token": token}).get("data", [])
-    rows = []
+    rows, insights_ok = [], True
     for p in posts:
         row = {"id": p["id"], "at": p.get("timestamp"), "text": p.get("text") or "", "link": p.get("permalink")}
-        try:
-            row.update(metric_values(get(THREADS, f"{p['id']}/insights",
-                                         {"metric": "views,likes,replies,reposts,quotes,shares", "access_token": token})))
-        except RuntimeError as e:
-            errors.append(f"Threads insights: {e}")
-            break   # same permission problem for every post
+        if insights_ok:
+            try:
+                row.update(metric_values(get(THREADS, f"{p['id']}/insights",
+                                             {"metric": "views,likes,replies,reposts,quotes,shares", "access_token": token})))
+            except RuntimeError as e:
+                errors.append(f"Threads insights: {e}")
+                insights_ok = False   # same permission problem for every post; keep listing them
         rows.append(row)
     return rows
 

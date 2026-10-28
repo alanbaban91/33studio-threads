@@ -1,13 +1,25 @@
 {
- "updated": "2026-10-28T13:33:08+00:00",
+ "updated": "2026-10-28T22:51:59+00:00",
  "errors": [],
  "threads": [
+  {
+   "id": "18085703309709852",
+   "at": "2026-10-28T16:00:41+0000",
+   "text": "Autumn in Slemani: the first cold morning, school bags everywhere, and someone's grandmother insisting you take a jacket.",
+   "link": "https://www.threads.com/@33studio.iq/post/DfCz-7jG3zc",
+   "views": 47,
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "quotes": 0,
+   "shares": 0
+  },
   {
    "id": "18127793458844414",
    "at": "2026-10-28T10:00:38+0000",
    "text": "If you're a designer in Kurdistan who has never shown your work online, post one piece this week and tag us. We'll be your first comment.",
    "link": "https://www.threads.com/@33studio.iq/post/DfCKx5RHIyn",
-   "views": 1,
+   "views": 2,
    "likes": 0,
    "replies": 0,
    "reposts": 0,
@@ -19,7 +31,7 @@
    "at": "2026-10-28T06:00:42+0000",
    "text": "Studio note: the best feedback this week came from someone who isn't a designer.\n\nThey didn't know the rules. They knew what they felt. Listen to those people.",
    "link": "https://www.threads.com/@33studio.iq/post/DfBvT4-FT_y",
-   "views": 108,
+   "views": 109,
    "likes": 1,
    "replies": 0,
    "reposts": 0,
@@ -43,7 +55,7 @@
    "at": "2026-10-27T16:00:50+0000",
    "text": "Arabic-script logos often get squeezed into a box that was drawn for English. Give them their own space and the curves start to make sense.",
    "link": "https://www.threads.com/@33studio.iq/post/DfAPMmbFTmZ",
-   "views": 113,
+   "views": 115,
    "likes": 1,
    "replies": 1,
    "reposts": 0,
@@ -463,18 +475,6 @@
    "reposts": 2,
    "quotes": 0,
    "shares": 1
-  },
-  {
-   "id": "18129897112837977",
-   "at": "2026-10-16T06:00:42+0000",
-   "text": "Thinking about hiring a creative agency? Bring three things to the first meeting:\n\n1. What you sell, in one sentence.\n2. Who you most need to win.\n3. What success looks like a year from now.\n\nWe'll bring the rest. 33studio.org",
-   "link": "https://www.threads.com/@33studio.iq/post/Dei1xgsFIM4",
-   "views": 67,
-   "likes": 2,
-   "replies": 0,
-   "reposts": 2,
-   "quotes": 0,
-   "shares": 0
   }
  ],
  "instagram": [
@@ -483,10 +483,10 @@
    "at": "2026-10-27T19:05:57+0000",
    "text": "To every student in Slemani with a sketchbook open at 3am and a deadline at 9: the habit of caring this much about one curve or one colour is exactly what clients end up paying for. Get some sleep when you can.",
    "link": "https://www.instagram.com/p/DfAkYW5lGsT/",
-   "likes": 1,
+   "likes": 2,
    "replies": 0,
-   "views": 23,
-   "reach": 9,
+   "views": 30,
+   "reach": 11,
    "saved": 0,
    "shares": 0
   },
@@ -495,10 +495,10 @@
    "at": "2026-10-25T17:19:39+0000",
    "text": "Ask any AI tool for a logo and you'll get something competent in seconds. So will your competitor. Competent is about to cost nothing; what still costs money is the decision that makes a brand recognisable, like the colour nobody else would pick or the line only you would say.\n\nThat's the work we do. 33studio.org",
    "link": "https://www.instagram.com/p/De7On5oFZT_/",
-   "likes": 3,
+   "likes": 4,
    "replies": 0,
-   "views": 90,
-   "reach": 46,
+   "views": 94,
+   "reach": 47,
    "saved": 0,
    "shares": 0
   },
@@ -509,7 +509,7 @@
    "link": "https://www.instagram.com/p/DezmZWKm1a8/",
    "likes": 4,
    "replies": 0,
-   "views": 118,
+   "views": 121,
    "reach": 61,
    "saved": 0,
    "shares": 1
@@ -521,7 +521,7 @@
    "link": "https://www.instagram.com/p/DewqYBSDke8/",
    "likes": 8,
    "replies": 2,
-   "views": 231,
+   "views": 232,
    "reach": 98,
    "saved": 1,
    "shares": 1
@@ -533,7 +533,7 @@
    "link": "https://www.instagram.com/p/Deg0wntDlWp/",
    "likes": 6,
    "replies": 0,
-   "views": 389,
+   "views": 392,
    "reach": 126,
    "saved": 1,
    "shares": 1
@@ -557,8 +557,8 @@
    "link": "https://www.instagram.com/p/DdWHnhBDiLU/",
    "likes": 7,
    "replies": 5,
-   "views": 503,
-   "reach": 132,
+   "views": 504,
+   "reach": 133,
    "saved": 1,
    "shares": 0
   },
@@ -690,7 +690,7 @@
    "likes": 7,
    "replies": 0,
    "views": 317,
-   "reach": 97,
+   "reach": 98,
    "saved": 0,
    "shares": 1
   },

@@ -496,5 +496,16 @@
     "posted_at": "2026-10-29T16:00:46.352660+00:00",
     "mood": "craft",
     "text": "Be honest: how many files on your desktop are called final-final? No judgement here."
+  },
+  {
+    "ids": [
+      "18001033194012770"
+    ],
+    "posted_at": "2026-10-29T19:21:50.560792+00:00",
+    "mood": "craft",
+    "photos": [
+      "photos/04-bin.jpg"
+    ],
+    "text": "A sketch goes in the bin once we've decided it isn't the one. Keeping the bin means nobody spends next week arguing for an idea we already tested and dropped."
   }
 ]

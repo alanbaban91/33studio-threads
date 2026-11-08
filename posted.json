@@ -702,5 +702,16 @@
     "posted_at": "2026-11-08T17:00:39.701667+00:00",
     "mood": "scene",
     "text": "Tag a photographer from Kurdistan whose work you'd recognise without seeing their name. That's the highest compliment in this industry."
+  },
+  {
+    "ids": [
+      "17895695577435192"
+    ],
+    "posted_at": "2026-11-08T18:35:56.876003+00:00",
+    "mood": "craft",
+    "photos": [
+      "photos/05-napkin.jpg"
+    ],
+    "text": "If an idea needs a screen, three fonts and a render before it makes sense, it isn't ready yet. Draw it on whatever is on the table. When the person across from you gets it in five seconds, it's worth building."
   }
 ]

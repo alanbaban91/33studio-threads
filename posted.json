@@ -882,5 +882,13 @@
     "posted_at": "2026-11-17T06:00:40.614845+00:00",
     "mood": "craft",
     "text": "Studio note: someone asked why we still sketch on paper when everything ends on a screen. Because paper is fast and cheap, and you can throw it away without guilt. Good ideas need a place to be bad first."
+  },
+  {
+    "ids": [
+      "18135229384702668"
+    ],
+    "posted_at": "2026-11-17T17:00:44.369512+00:00",
+    "mood": "script",
+    "text": "Ask anyone who's tried: Kurdish text set right-aligned in software built for English breaks in odd ways. Punctuation jumps to the wrong end. Numbers flip. We test every layout in the real script, not in placeholder text."
   }
 ]

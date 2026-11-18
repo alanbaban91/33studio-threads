@@ -890,5 +890,13 @@
     "posted_at": "2026-11-17T17:00:44.369512+00:00",
     "mood": "script",
     "text": "Ask anyone who's tried: Kurdish text set right-aligned in software built for English breaks in odd ways. Punctuation jumps to the wrong end. Numbers flip. We test every layout in the real script, not in placeholder text."
+  },
+  {
+    "ids": [
+      "18135314251828417"
+    ],
+    "posted_at": "2026-11-18T06:00:40.558546+00:00",
+    "mood": "scene",
+    "text": "Respect to the people who run printing shops in this city. They've fixed more broken files at midnight than any design school could teach."
   }
 ]
